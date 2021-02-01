@@ -16,10 +16,11 @@ def get_blog_posts(id):
     for i in res:
         print(i.contents[0])
 
+
 if __name__ == "__main__":
     
     with open('./data.json', 'r', encoding='utf-8') as f:
         data = json.load(f)
     
-    get_blog_posts(data['member'][1])
+    get_blog_posts(data['member'][0])
     
